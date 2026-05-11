@@ -1,0 +1,101 @@
+<div class='container'>
+  <header id='header'>
+    <div class='content'>
+      <h1>
+        Hi, I am Astra. <span class='accent'>Full-stack</span> Specialist!
+      </h1>
+      <p class='description'>
+        I'm a Full-Stack Developer specializing in React.js, Next.js, Node.js
+        and database management. I build scalable, high-performance web
+        applications, robust back-end architecture, and efficient API
+        integrations.
+      </p>
+      <div class='button-container'>
+        <a class='button-link secondary' href='/projects'>View works</a>
+        <a class='button-link primary' href='/resume.pdf' download
+          >Download resume</a
+        >
+      </div>
+    </div>
+    <img src='/images/me.png' alt='just me' />
+  </header>
+</div>
+<style>
+  .container {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: 60px;
+
+    @media screen and (max-width: 1000px) {
+      & {
+        padding-inline: 24px;
+      }
+    }
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 540px 1fr;
+    justify-items: center;
+    gap: 80px;
+    align-items: center;
+
+    h1 {
+      font-size: 44px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .accent {
+        color: var(--primary);
+      }
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+
+      @media (max-width: 600px) {
+        & {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .button-link {
+      padding: 14px 32px;
+      width: fit-content;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .primary {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .description {
+      line-height: 28px;
+      color: var(--dark);
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 1000px) {
+      & {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 40px;
+
+        img {
+          grid-row: 1;
+        }
+      }
+    }
+  }
+</style>
