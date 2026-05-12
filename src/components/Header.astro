@@ -1,3 +1,7 @@
+---
+import ButtonLink from './ButtonLink.astro';
+---
+
 <div class='container'>
   <header id='header'>
     <div class='content'>
@@ -11,10 +15,12 @@
         integrations.
       </p>
       <div class='button-container'>
-        <a class='button-link secondary' href='/projects'>View works</a>
-        <a class='button-link primary' href='/resume.pdf' download
-          >Download resume</a
-        >
+        <ButtonLink text='View projects' variant='secondary' href='/projects' />
+        <ButtonLink
+          text='Download resume'
+          href='/resume.pdf'
+          isDownload={true}
+        />
       </div>
     </div>
     <img src='/images/me.png' alt='just me' />
