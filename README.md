@@ -1,3 +1,45 @@
+# Astra Personal Website with Astro
+
+## Screenshot
+
+![Screenshot](/AstraDesktopScreenshot.png)
+
+A modern personal website built with Astro.
+
+This project includes:
+
+- Blog pages
+- Project pages
+- Contact page
+- Dynamic blog routing using slugs
+- Content collections with Zod validation
+- Reusable Astro components
+
+---
+
+## Features
+
+- Dynamic blog pages with `[slug].astro`
+- Responsive design
+- Reusable components
+- Markdown content support
+- Astro content collections
+- Schema validation using Zod
+- Clean folder structure
+
+---
+
+## Tech Stack
+
+- Astro
+- HTML5
+- CSS3
+- Typescript
+- Zod
+- Markdown
+
+---
+
 # Astro Starter Kit: Basics
 
 ```sh
