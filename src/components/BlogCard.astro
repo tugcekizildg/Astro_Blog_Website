@@ -14,7 +14,7 @@ const { post } = Astro.props;
   <div class='metadata'>
     <p class='date'>{post.data.date.toDateString()}</p>
     <span class='vertical-separator'></span>
-    <p class='tags'>{post.data.tags}</p>
+    <p class='tags'>{post.data.tags.join(', ')}</p>
   </div>
   <p class='description'>{post.data.description}</p>
   <ButtonLink
